@@ -1,7 +1,6 @@
 body {
-    max-width: 1200px;
-    outline: 2px solid red;
     margin: 20px auto;
+    max-width: 1400px;
 }
 
 ul {
@@ -15,14 +14,17 @@ a {
 }
 
 header {
+    max-width: 1400px;
     display: flex;
-    justify-content: space-between;
     position: relative;
 }
 
 .burger {
     width: 40px;
     cursor: pointer;
+    position: relative;
+    z-index: 10;
+    margin-left: 25px;
 }
 
 .line1,
@@ -30,7 +32,7 @@ header {
 .line3 {
     width: 35px;
     height: 5px;
-    background-color: rgba(121, 212, 212, 0.979);
+    background-color: rgba(196, 220, 221, 0.979);
     border-radius: 2px;
     margin: 6px 0;
     transition: 0.4s;
@@ -56,12 +58,19 @@ header {
     padding: 10px 20px;
     color: white;
     font-weight: bold;
+    margin-left: 1230px;
+}
+
+.mode:hover {
+    background-color: lightseagreen;
 }
 
 .main-navigation {
     position: absolute;
-    top: 50px;
-    left: 0px;
+    padding: 50px 50px 650px 140px;
+    z-index: 5;
+    top: 0px;
+    left: -800px;
     background-color: rgba(121, 212, 212, 0.979);
 }
 
@@ -73,4 +82,51 @@ header {
     color: white;
     font-weight: bold;
     text-transform: uppercase;
+}
+
+.main-navigation a:hover {
+    text-decoration: underline;
+}
+
+.show-nav {
+    left: 0px;
+    transition: 0.5s;
+}
+
+.categories {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.category {
+    width: 300px;
+    height: 200px;
+    padding: 10px 0;
+    border-radius: 5px;
+    margin-bottom: 40px;
+    text-align: center;
+    background-color: rgba(162, 227, 247, 0.993);
+    cursor: pointer;
+}
+
+.category:hover {
+    /*outline: 2px solid rgb(0, 119, 128);*/
+    box-shadow: 5px 5px 5px rgb(32, 178, 170, 0.5);
+}
+
+.categories a {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.category img {
+    margin: 10px auto;
+    display: block;
+    text-align: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid rgba(121, 212, 212, 0.8);
 }
