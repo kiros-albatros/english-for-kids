@@ -1,0 +1,76 @@
+body {
+    max-width: 1200px;
+    outline: 2px solid red;
+    margin: 20px auto;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.burger {
+    width: 40px;
+    cursor: pointer;
+}
+
+.line1,
+.line2,
+.line3 {
+    width: 35px;
+    height: 5px;
+    background-color: rgba(121, 212, 212, 0.979);
+    border-radius: 2px;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .line1 {
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .line2 {
+    opacity: 0;
+}
+
+.change .line3 {
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.mode {
+    background-color: rgba(121, 212, 212, 0.979);
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: white;
+    font-weight: bold;
+}
+
+.main-navigation {
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    background-color: rgba(121, 212, 212, 0.979);
+}
+
+.main-navigation li {
+    margin: 10px;
+}
+
+.main-navigation a {
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
