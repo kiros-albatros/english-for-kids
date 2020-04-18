@@ -124,6 +124,10 @@ header {
   font-size: 20px;
 }
 
+.active {
+  text-decoration: underline;
+}
+
 .category img {
   margin: 10px auto;
   display: block;
@@ -147,6 +151,10 @@ header {
   text-transform: uppercase;
   font-weight: bold;
   perspective: 1000px;
+}
+
+.card:active {
+  box-shadow: 5px 5px 5px rgb(32, 178, 170, 0.5);
 }
 
 .card img {
