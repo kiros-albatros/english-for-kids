@@ -25,6 +25,8 @@ if (categoryName == 'actionA') {
     categoryName = actionB;
 } else if (categoryName == 'actionC') {
     categoryName = actionC;
+} else if (categoryName == 'adjective') {
+    categoryName = adjective;
 } else if (categoryName == 'animalA') {
     categoryName = animalA;
 } else if (categoryName == 'animalB') {
