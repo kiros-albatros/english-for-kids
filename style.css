@@ -98,9 +98,13 @@ header {
 .categories,
 .topic-cards {
   margin-top: 40px;
-  display: flex;
+
   flex-wrap: wrap;
   justify-content: space-around;
+}
+
+.topic-cards {
+  display: flex;
 }
 
 .category {
@@ -199,9 +203,13 @@ header {
 }
 
 .show {
-  display: flex;
+  display: block;
 }
 
 .hide {
   display: none;
+}
+
+.show-flex {
+  display: flex;
 }
